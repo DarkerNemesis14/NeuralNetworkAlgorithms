@@ -1,10 +1,10 @@
 import numpy as np
-from Perceptron import PerceptronModel
+from SingleHidddenLayerMLP import MLPModel
 
 
 x = np.array([[0,0],[0,1],[1,0],[1,1]])
-y = np.array([0,0,0,1])
+y = np.array([[0,1,1,0]])
 
-obj = PerceptronModel()
+obj = MLPModel()
 obj.fit(x,y)
 print(obj.predict(x))
